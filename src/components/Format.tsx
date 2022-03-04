@@ -29,7 +29,7 @@ const Format: React.FC<Props> = ({handleChange, checked, name}) => {
   }
 
   return (
-    <div className={`relative flex-1 xl:flex-none flex flex-col items-center gap-2 px-6 sm:px-14 py-4 border shadow ${checked ? "bg-indigo-50 border-indigo-300 shadow-inner-indigo-300" : "border-gray-300 shadow-inner-gray-300"} rounded-lg`}>
+    <div className={`relative flex-1 xl:flex-none flex flex-col items-center gap-2 px-6 sm:px-14 py-4 rounded-lg border shadow ${checked ? "bg-indigo-50 border-indigo-300 shadow-inner-indigo-300" : "border-gray-300 shadow-inner-gray-300"}`}>
       <FontAwesomeIcon icon={getIcon(name)} className={`text-5xl ${checked ? "text-indigo-600" : "text-gray-600"}`} />
       <p className={`text-md font-semibold ${checked ? "text-indigo-900" : "text-gray-700"}`}>{name}</p>
       <FontAwesomeIcon icon={checked ? faSquareCheck : faSquare} className={`text-2xl ${checked ? "text-indigo-600" : "text-gray-300"}`} />
@@ -47,4 +47,3 @@ const Format: React.FC<Props> = ({handleChange, checked, name}) => {
 };
 
 export default Format;
-
