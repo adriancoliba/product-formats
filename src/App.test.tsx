@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders main div', () => {
   render(<App />);
-  expect(screen.getByText(/App/i)).toBeInTheDocument();
+  expect(screen.getByText(/Sidebar/i)).toBeInTheDocument();
 });
