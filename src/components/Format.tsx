@@ -40,6 +40,7 @@ const Format: React.FC<Props> = ({handleChange, checked, name}) => {
           name={name.toLowerCase()}
           onChange={handleChange}
           checked={checked}
+          data-testid={`input_checkbox_${name.toLowerCase()}`}
         />
       </label>
     </div>
